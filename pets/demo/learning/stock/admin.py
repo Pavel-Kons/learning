@@ -8,9 +8,9 @@ from stock.models import Currency
 
 @admin.register(Stock)
 class StockAdmin(admin.ModelAdmin):
-	pass
+    list_display = ("ticker", "name", "description")
 
 
 @admin.register(Currency)
 class CurrencyAdmin(admin.ModelAdmin):
-	pass
+    pass
